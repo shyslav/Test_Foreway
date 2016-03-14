@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
 
+/**
+ * @author Shyshkin Vladyslav
+ * @version 1
+ */
 public class Main {
 
     public static int max = 0;
