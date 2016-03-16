@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16.03.2016 7:55:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.shyslav.menu.WMenu" table="W_menu" catalog="Foreway_library">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="number" type="java.lang.Integer">
+            <column name="number" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="30" />
+        </property>
+        <property name="link" type="string">
+            <column name="link" length="100" />
+        </property>
+        <property name="vision" type="java.lang.Character">
+            <column name="vision" length="1" />
+        </property>
+        <set name="menuRoles" table="Menu_Role" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="menu_id" not-null="true" />
+            </key>
+            <one-to-many class="com.shyslav.menu.MenuRole" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5D1689B-3E1E-5076-DDD3-98D2F282E5C3" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="DRIVERINPARK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>DRIVERINPARK</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7164C420-3C3E-703C-C22D-7DD1BFD14EA7">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>DRIVERINPARK</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRIVER_ID" id="7FFC04AE-4B3F-F24F-1361-2B5BCC6E7EA7">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>DRIVERINPARK</sourceObjSchema>
+<sourceObjName>DRIVER_ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="373FB029-9041-7BDC-1755-F10D169663D3" referredColumn="1FCE4176-3760-261B-520A-C9D7A3E8AB2B"/>
+</associations>
+</Column>
+<Column name="CARDRIVEONPARK" id="EF8B1C04-2F21-1575-429D-7CB45B803803">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>DRIVERINPARK</sourceObjSchema>
+<sourceObjName>CARDRIVEONPARK</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="145A0C6B-0DD6-D87C-203E-74B5F9817816" referredColumn="A4F408F8-3AEE-6570-4934-7E06F11B1861"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C014AE1A-8C93-4F2C-7392-5144AAFF4299" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="DRIVERINPARK_PK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>SYS_C0011098</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7164C420-3C3E-703C-C22D-7DD1BFD14EA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="506F8126-15BF-70F0-E001-E8F20C07A77E" name="SYS_C0011099">
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FFC04AE-4B3F-F24F-1361-2B5BCC6E7EA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04A9EA42-E0D9-C766-3EF5-7ABBAAA6BC85" name="SYS_C0011100">
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF8B1C04-2F21-1575-429D-7CB45B803803"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

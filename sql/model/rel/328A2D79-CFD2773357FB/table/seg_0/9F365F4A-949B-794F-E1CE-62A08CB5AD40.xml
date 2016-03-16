@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F365F4A-949B-794F-E1CE-62A08CB5AD40" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="PARK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>PARK</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="421D299F-D187-5034-0D41-3CFDEA94C753">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>PARK</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="8DA26D5A-F3E3-4EED-CF6D-9C241DB145FE">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>PARK</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESS" id="B0625C4A-F4E8-D32F-1CEB-436A2EA4DE20">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>PARK</sourceObjSchema>
+<sourceObjName>ADRESS</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F09A69A-F634-443F-4EC9-037929E3CDD4" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="PARK_PK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>SYS_C0011079</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="421D299F-D187-5034-0D41-3CFDEA94C753"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

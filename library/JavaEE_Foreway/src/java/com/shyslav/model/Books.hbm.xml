@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16.03.2016 7:55:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.shyslav.model.Books" table="books" catalog="Foreway_library">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <many-to-one name="genre" class="com.shyslav.model.Genre" fetch="select">
+            <column name="genre" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="30" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="30" />
+        </property>
+        <property name="smallText" type="string">
+            <column name="small_text" length="400" />
+        </property>
+        <property name="fullText" type="string">
+            <column name="full_text" length="65535" />
+        </property>
+        <property name="dateCreate" type="timestamp">
+            <column name="date_create" length="19" />
+        </property>
+        <property name="vision" type="java.lang.Character">
+            <column name="vision" length="1" />
+        </property>
+        <property name="server_Path" type="string">
+            <column name="server_Path" length="100" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

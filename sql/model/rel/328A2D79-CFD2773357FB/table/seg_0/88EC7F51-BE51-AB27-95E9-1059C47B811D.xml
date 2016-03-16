@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88EC7F51-BE51-AB27-95E9-1059C47B811D" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="CARSONPARK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>CARSONPARK</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A4F408F8-3AEE-6570-4934-7E06F11B1861">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>CARSONPARK</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAR_ID" id="7E643891-DC95-696D-1F95-24F932E89A3C">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>CARSONPARK</sourceObjSchema>
+<sourceObjName>CAR_ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FC65963-FCDC-4CD2-FD11-24343FC27A62" referredColumn="D11B34BB-CFE1-708B-4C11-37E1E5541EAC"/>
+</associations>
+</Column>
+<Column name="PARK_ID" id="258DA671-27F9-DCCF-754C-BDD79828D0F7">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>CARSONPARK</sourceObjSchema>
+<sourceObjName>PARK_ID</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81FCDECD-67E8-366B-8C1A-95B45C024C6F" referredColumn="421D299F-D187-5034-0D41-3CFDEA94C753"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF92BA9C-2980-AA61-370E-BFAFBA332E6C" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="CARSONPARK_PK">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>SYS_C0011094</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4F408F8-3AEE-6570-4934-7E06F11B1861"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C112C8D-113C-96D6-2F9B-B3597471E8B8" schemaObject="CA51501A-9DE8-A833-CA18-AA9418A8EB23" name="CARSONPARK_CAR_ID_UN">
+<sourceConnName>shyslav</sourceConnName>
+<sourceObjSchema>SHYSLAV</sourceObjSchema>
+<sourceObjName>SYS_C0011095</sourceObjName>
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E643891-DC95-696D-1F95-24F932E89A3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BBC4E89-8A83-1211-76FE-5D81462EB17C" name="SYS_C0011096">
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E643891-DC95-696D-1F95-24F932E89A3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A85F06CD-0177-6DAA-2527-5DE395BDE450" name="SYS_C0011097">
+<createdBy>Shyshkin Vladyslav</createdBy>
+<createdTime>2016-03-14 15:56:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="258DA671-27F9-DCCF-754C-BDD79828D0F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

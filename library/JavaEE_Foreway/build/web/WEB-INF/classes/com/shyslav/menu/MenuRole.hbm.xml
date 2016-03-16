@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16.03.2016 7:55:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.shyslav.menu.MenuRole" table="Menu_Role" catalog="Foreway_library">
+        <composite-id name="id" class="com.shyslav.menu.MenuRoleId">
+            <key-property name="roleId" type="int">
+                <column name="role_id" />
+            </key-property>
+            <key-property name="menuId" type="int">
+                <column name="menu_id" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="role" class="com.shyslav.menu.Role" update="false" insert="false" fetch="select">
+            <column name="role_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="WMenu" class="com.shyslav.menu.WMenu" update="false" insert="false" fetch="select">
+            <column name="menu_id" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
